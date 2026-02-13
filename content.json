@@ -1,0 +1,33 @@
+{
+"name": "Mayur Sonawane | Data Analyst Portfolio",
+
+"headline": "Hi, I'm Mayur",
+
+"about": "Data Analyst skilled in SQL and Power BI focused on turning data into business insights.",
+
+"profileImage": "images/profile.jpg",
+
+"links": [
+{"name":"LinkedIn","url":"https://linkedin.com"},
+{"name":"Email","url":"mailto:your@email.com"}
+],
+
+"skills":[
+{"name":"Excel","icon":"images/excel.png"},
+{"name":"SQL","icon":"images/sql.png"},
+{"name":"Power BI","icon":"images/powerbi.png"}
+],
+
+"projects":[
+{
+"title":"Loan Dashboard",
+"description":"Analyzed loan distribution trends.",
+"image":"images/project1.png"
+},
+{
+"title":"Customer Analysis",
+"description":"Identified customer behavior patterns.",
+"image":"images/project2.png"
+}
+]
+}
