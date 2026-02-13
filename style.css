@@ -1,42 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f6f8;
-    color: #333;
+    margin:0;
+    font-family:'JetBrains Mono', monospace;
+    background:#0a0f14;
+    color:#c9f7ff;
 }
 
-header {
-    background: #2c3e50;
-    color: white;
-    padding: 40px;
-    text-align: center;
+/* subtle grid background */
+body::before {
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+        linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:-1;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:#070b10;
+    border-bottom:1px solid #00f0ff22;
+    position:sticky;
+    top:0;
+}
+
+nav ul {
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a {
+    color:#7df9ff;
+    text-decoration:none;
+}
+
+.hero {
+    text-align:center;
+    padding:120px 20px;
+}
+
+.glow {
+    font-size:3rem;
+    color:#00f0ff;
+    text-shadow:0 0 20px #00f0ff;
 }
 
 section {
-    padding: 30px;
-    max-width: 900px;
-    margin: auto;
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
 }
 
-h2 {
-    color: #2c3e50;
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
 }
 
-.skills ul {
-    list-style-type: square;
+.card {
+    padding:20px;
+    border:1px solid #00f0ff33;
+    background:#0f1720;
+    text-align:center;
+    transition:.3s;
 }
 
-.project {
-    background: white;
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.card:hover {
+    box-shadow:0 0 20px #00f0ff55;
+    transform:translateY(-5px);
+}
+
+.project-card {
+    background:#0f1720;
+    padding:25px;
+    margin-top:20px;
+    border-left:3px solid #00f0ff;
+    transition:.3s;
+}
+
+.project-card:hover {
+    box-shadow:0 0 20px #00f0ff55;
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #2c3e50;
-    color: white;
+    text-align:center;
+    padding:30px;
+    color:#7df9ff88;
 }
